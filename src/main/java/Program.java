@@ -19,6 +19,12 @@ public class Program {
 
   public static boolean isPrime(int n) {
     //ここに素数判定プログラムを実装してください。
-    return true;
+	boolean sosu=true;   //(2)
+	for(int i=2;i<n;i++){   //(3)
+        if(n%i==0)   //(4)
+          sosu=false;
+         break;   //(5)
+	}
+    return sosu;
   }
 }
